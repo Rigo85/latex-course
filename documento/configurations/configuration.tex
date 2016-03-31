@@ -15,7 +15,7 @@
 \newcommand{\presentationDate}{Junio del 2009}
 \newcommand{\myThesisTitle}{Biblioteca paralela de algoritmos evolutivos aplicados a problemas computacionalmente costosos}
 \newcommand{\position}{Asesor del Departamento de Programación}
-% \newcommand{\positionTwo}{Asesor del Departamento de Matemáticas}
+% \newcommand{\positionTwo}{Asesor del Departamento de X}
 
 %---------------------------------------------------------------
 
@@ -61,8 +61,8 @@
 \DeclareDocumentCommand{\cityAndDate}{O{Ciudad de la Habana} m}{
 \large{\bf #1, #2}}
 \DeclareDocumentCommand{\createHeader}{m o}{
-  \section*{\Large #1}
-  \IfNoValueF{#2}{\addcontentsline{toc}{chapter}{\Large #1}}
+  \section*{#1}
+  \IfNoValueF{#2}{\addcontentsline{toc}{chapter}{#1}}
   \rhead{\MakeUppercase{\textit{#1}}}
   \lhead{}
   \renewcommand{\headrulewidth}{0.4pt}

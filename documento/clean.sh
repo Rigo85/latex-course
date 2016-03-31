@@ -10,4 +10,9 @@
 # MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Please refer to the
 # AGPL (http:www.gnu.org/licenses/agpl-3.0.txt) for more details.
 
+
 rm -f *.pdf *.ps *.dvi *.log *.aux *.loa *.lof *.lot *.toc
+
+for d in */ ; do
+	rm -f "$d"/*.pdf "$d"/*.ps "$d"/*.dvi "$d"/*.log "$d"/*.aux "$d"/*.loa "$d"/*.lof "$d"/*.lot "$d"/*.toc
+done
