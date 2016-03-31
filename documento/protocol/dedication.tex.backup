@@ -1,0 +1,15 @@
+\section*{\Large Dedicatoria}
+%\addcontentsline{toc}{part}{Dedicatoria}
+
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+% \rhead{\MakeUppercase{\textit{ Dedicatoria}}}
+\lfoot{}
+\cfoot{}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\noindent
+te dedico a ti.
+

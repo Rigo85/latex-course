@@ -1,0 +1,93 @@
+% Author Rigoberto Leander Salgado Reyes <rlsalgado2006@gmail.com>
+% 
+% Copyright 2016 by Rigoberto Leander Salgado Reyes.
+% 
+% This program is licensed to you under the terms of version 3 of the
+% GNU Affero General Public License. This program is distributed WITHOUT
+% ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING THOSE OF NON-INFRINGEMENT,
+% MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Please refer to the
+% AGPL (http:www.gnu.org/licenses/agpl-3.0.txt) for more details.
+
+% Datos a personalizar.
+\newcommand{\authorOne}{Rigoberto Leander Salgado Reyes}
+\newcommand{\tutorOne}{Lic. Liesner Acevedo Martínez}
+\newcommand{\tutorTwo}{Lic. Rafael Arturo Trujillo Rasúa}
+\newcommand{\presentationDate}{Junio del 2009}
+\newcommand{\myThesisTitle}{Biblioteca paralela de algoritmos evolutivos aplicados a problemas computacionalmente costosos}
+\newcommand{\position}{Asesor del Departamento de Programación}
+% \newcommand{\positionTwo}{Asesor del Departamento de Matemáticas}
+
+%---------------------------------------------------------------
+
+\DeclareDocumentCommand{\createCoverPage}{m m m o m o m}{
+\begin{titlepage}
+    \begin{center}
+    \university
+
+    \faculty{#1}
+
+    \logo
+
+    \thesisTitle{#2}
+
+    \thesisType
+
+    \authorsAndTutors{#3}[#4]{#5}[#6]
+
+    \cityAndDate{#7}
+    \end{center}
+\end{titlepage}
+}
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\figurename}{Figura}
+\newcommand{\separator}{\vspace{0.6in}}
+\newcommand{\university}{\huge{\bf Universidad de las Ciencias Informáticas}}
+\newcommand{\faculty}[1]{\huge{\bf Facultad #1}}
+\newcommand{\logo}{\separator\includegraphics[width=1.8in,height=0.9in]{images/LogoUCI.eps}\separator}
+\newcommand{\thesisTitle}[1]{\Large{\bf Título: \textquotedblleft #1".}\separator}
+\newcommand{\thesisType}{\large{Trabajo de Diploma para optar por el Título de Ingeniero en Ciencias Informáticas}\separator}
+\DeclareDocumentCommand{\authorsAndTutors}{m O{\vspace{0.7in}} m o}{
+    \begin{center}
+    \begin{tabular}{rl}
+    \large{\bf Autor \IfNoValueF{#2}{(es)}:}	& \large{#1} \\
+						\IfNoValueF{#2}{& \large{#2} \\}
+						& \\
+    \large{\bf Tutor \IfNoValueF{#4}{(es)}:}	& \large{#3} \\
+						\IfNoValueF{#4}{& \large{#4} \\} 
+    \end{tabular}
+    \end{center}
+    \vspace{1.0in}
+}
+\DeclareDocumentCommand{\cityAndDate}{O{Ciudad de la Habana} m}{
+\large{\bf #1, #2}}
+\DeclareDocumentCommand{\createHeader}{m o}{
+  \section*{\Large #1}
+  \IfNoValueF{#2}{\addcontentsline{toc}{chapter}{\Large #1}}
+  \rhead{\MakeUppercase{\textit{#1}}}
+  \lhead{}
+  \renewcommand{\headrulewidth}{0.4pt}
+  \cfoot{}
+  \rfoot{\thepage}
+}
+\newcommand{\fillDay}{\makebox[0.3in]{\hrulefill}\space}
+\newcommand{\fillMonth}{\makebox[1in]{\hrulefill}\space}
+\newcommand{\fillYear}{\makebox[0.6in]{\hrulefill}}
+\newcommand{\signature}{\makebox[2in]{\hrulefill}}
+\DeclareDocumentCommand{\Keywords}{O{Keywords} m}{\par\noindent
+{\textbf{#1\/}: \small{ \em #2}}}
+\DeclareDocumentCommand{\thesisSignature}{m o m m o o}{
+    \begin{center}
+    \begin{tabular}{cp{0.5in}c}
+        \signature     	&   	&  \IfNoValueF{#2}{\signature}	\\
+        #1		&   	&  \IfNoValueF{#2}{#2}		\\
+			&	& 				\\
+			&	& 				\\
+        \signature     	&   	&  \IfNoValueF{#5}{\signature}	\\
+        #4		&   	&  \IfNoValueF{#5}{\position}	\\
+        #3     		&   	&  \IfNoValueF{#5}{#5}
+    \end{tabular}
+    \end{center}
+}
+
+
+

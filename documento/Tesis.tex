@@ -1,0 +1,70 @@
+% Usar papel de tamaño carta y fuente de 11 puntos.
+% openany => permite que los capítulos comiencen en la próxima página
+\documentclass[openany,letterpaper,11pt]{report}
+
+% Incluir el archivo con el preámbulo.
+\input{configurations/header}
+
+% Incluir el archivo con las configuriones.
+\input{configurations/configuration}
+
+% Comienza el cuerpo del documento.
+\begin{document}
+
+% Crear portada.
+\createCoverPage
+{6}
+{\myThesisTitle}
+{\authorOne}
+{\tutorOne}
+[\tutorTwo]
+{\presentationDate}
+
+% Cambia la numeración a números romanos, las opciones pueden ser:
+% arabic => 1 2 3 4
+% roman  => i ii iii
+% Roman  => II II III
+% alph   => a b c
+% Alph   => A B C
+\pagenumbering{roman}
+
+% Autoría.
+\thispagestyle{empty}
+\include{protocol/authorship}
+
+% Contactos.
+\thispagestyle{empty}
+\include{protocol/contact}
+
+% Agradecimientos.
+\thispagestyle{empty}
+\include{protocol/gratefulness}
+
+% Dedicatoria.
+\thispagestyle{empty}
+\include{protocol/dedication}
+
+% Resumen.
+\include{abstract/abstract}
+
+\def\contentsname{\Large Índice}
+\tableofcontents % \Índice general
+\newpage
+
+\def\listfigurename{\Large Índice de figuras}
+\listoffigures % \Índice de figuras
+\newpage
+
+\def\listtablename{\Large Índice de tablas}
+\listoftables % \Índice de tablas
+\newpage
+
+\def\listalgorithmname{\Large Índice de algoritmos}
+\listofalgorithms % \Índice de algoritmos
+\newpage
+
+\pagenumbering{arabic}
+
+\include{introduction/introduction}
+
+\end{document}
