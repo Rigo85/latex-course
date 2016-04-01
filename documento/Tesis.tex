@@ -16,20 +16,17 @@
 % Incluir el archivo con el preámbulo.
 \input{configurations/header}
 
-% Incluir el archivo con las configuriones.
-\input{configurations/configuration}
-
 % Comienza el cuerpo del documento.
 \begin{document}
 
 % Crear portada.
 \createCoverPage
-{6}
-{\myThesisTitle}
-{\authorOne}
-{\tutorOne}
-[\tutorTwo]
-{\presentationDate}
+{6} % Facultad.
+{\myThesisTitle} % Título.
+{\authorOne} % 1er autor.
+{\tutorOne} % 1er tutor.
+[\tutorTwo] % 2do tutor.
+{\presentationDate} % Fecha de entrega.
 
 % Cambia la numeración a números romanos, las opciones pueden ser:
 % arabic => 1 2 3 4
@@ -39,40 +36,14 @@
 % Alph   => A B C
 \pagenumbering{roman}
 
-% Autoría.
-\thispagestyle{empty}
-\include{protocol/authorship}
-
-% Contactos.
-\thispagestyle{empty}
-\include{protocol/contact}
-
-% Agradecimientos.
-\thispagestyle{empty}
-\include{protocol/gratefulness}
-
-% Dedicatoria.
-\thispagestyle{empty}
-\include{protocol/dedication}
+% Contenido protocolar del documento, agradecimientos, etc.
+\include{protocol/protocols}
 
 % Resumen.
 \include{abstract/abstract}
 
-\def\contentsname{\Large Índice}
-\tableofcontents % \Índice general
-\newpage
-
-\def\listfigurename{\Large Índice de figuras}
-\listoffigures % \Índice de figuras
-\newpage
-
-\def\listtablename{\Large Índice de tablas}
-\listoftables % \Índice de tablas
-\newpage
-
-\def\listalgorithmname{\Large Índice de algoritmos}
-\listofalgorithms % \Índice de algoritmos
-\newpage
+% Tablas de contenidos del documento.
+\include{configurations/indexes}
 
 \pagenumbering{arabic}
 

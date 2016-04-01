@@ -26,7 +26,7 @@
 
     \faculty{#1}
 
-    \logo
+    \logo{images/LogoUCI.eps}
 
     \thesisTitle{#2}
 
@@ -43,7 +43,7 @@
 \newcommand{\separator}{\vspace{0.6in}}
 \newcommand{\university}{\huge{\bf Universidad de las Ciencias Informáticas}}
 \newcommand{\faculty}[1]{\huge{\bf Facultad #1}}
-\newcommand{\logo}{\separator\includegraphics[width=1.8in,height=0.9in]{images/LogoUCI.eps}\separator}
+\newcommand{\logo}[1]{\separator\includegraphics[width=1.8in,height=0.9in]{#1}\separator}
 \newcommand{\thesisTitle}[1]{\Large{\bf Título: \textquotedblleft #1".}\separator}
 \newcommand{\thesisType}{\large{Trabajo de Diploma para optar por el Título de Ingeniero en Ciencias Informáticas}\separator}
 \DeclareDocumentCommand{\authorsAndTutors}{m O{\vspace{0.7in}} m o}{
