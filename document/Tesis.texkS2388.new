@@ -1,0 +1,157 @@
+% Usar papel de tamaño carta y fuente de 11 puntos.
+% openany => permite que los capítulos comiencen en la próxima página
+\documentclass[openany,letterpaper,11pt]{report}
+
+% Ajustar los margenes de la hoja (el izquierdo es mayor que el derecho para el encuadernado).
+% tmargin => superior
+% rmargin => derecho
+% bmargin => inferior
+% lmargin => izquierdo.
+\usepackage[tmargin=3.81cm, rmargin=1.2cm, bmargin=3.31cm, lmargin=2cm]{geometry}
+
+% Utilizar la codificación UTF8 para el documento, de esta forma se puede utilizar las tildes
+% y la eñe de la forma: áéíóúñ y no \'a \'e \'i \'o \'u \~n. Se escribe mejor y ayuda en la 
+% corrección ortográfica.
+\usepackage[utf8x]{inputenc}
+\usepackage{ucs}
+
+% Utilizar el idioma español.
+\usepackage[spanish]{babel}
+
+%
+\usepackage{xparse}
+
+%
+\usepackage{graphicx}
+
+%
+\usepackage{algorithm}
+% \usepackage{algorithmic}
+% Usar interlineado de 1.5
+% para que coincida con el interlineado 1.5 del ms-word el valor debe ser de 1.25.
+% existen varias formas de cambiar el interlineado.
+\linespread{1.5}
+
+% El paquete fancyhdr es usado para las cabeceras y pies de página.
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% Restablece la configuración por defecto de las cabecera y pies de página.
+\fancyhf{}
+% El estilo fancy agrega una línea que delimita el encabezado, cambiando su grosor a 0
+% evitamos que aparezca.
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\thepage}
+
+% Fuente clon de Arial
+\renewcommand{\rmdefault}{phv}
+\renewcommand{\sfdefault}{phv}
+
+%
+\input{configurations/configuration}
+
+% Comienza el cuerpo del documento.
+\begin{document}
+
+%
+\createCoverPage
+{6}
+{Biblioteca paralela de algoritmos evolutivos aplicados a problemas computacionalmente costosos}
+{Rigoberto Leander Salgado Reyes}
+{Lic. Liesner Acevedo Martínez}
+[Lic. Rafael Arturo Trujillo Rasúa]
+{Junio del 2009}
+
+\pagestyle{empty}
+
+\thispagestyle{empty}
+\include{protocol/authorship}
+
+\thispagestyle{empty}
+\include{protocol/contact}
+\newpage
+
+\thispagestyle{empty}
+\pagenumbering{roman}
+
+% \pagestyle{plain}
+\include{protocol/gratefulness}
+\newpage
+
+% \pagestyle{plain}
+\include{protocol/dedication}
+\newpage
+
+%     \thispagestyle{empty}
+%     \include{resumen}
+%     \newpage
+
+\def\contentsname{\Large Índice}
+\tableofcontents % \Índice general
+\newpage
+
+\def\listfigurename{\Large Índice de figuras}
+\listoffigures % \Índice de figuras
+\newpage
+
+\def\listtablename{\Large Índice de tablas}
+\listoftables % \Índice de tablas
+\newpage
+
+\def\listalgorithmname{\Large Índice de algoritmos}
+\listofalgorithms % \Índice de algoritmos
+\newpage
+
+\pagenumbering{arabic}
+
+
+
+% Evita que aparezca cualquier estilo en la página actual, 
+% en este la numeración de la página.
+\thispagestyle{empty}
+
+% Texto centrado.
+\begin{center}
+% Tamaño de letra grande.
+\LARGE{Bacon ipsum}
+\end{center}
+
+\begin{center}
+% Fecha
+\today
+\end{center}
+
+% Introduce un espacio vertical.
+\vspace{2.5cm}
+
+% Cambia la numeración a números romanos, las opciones pueden ser:
+% arabic => 1 2 3 4
+% roman  => i ii iii
+% Roman  => II II III
+% alph   => a b c
+% Alph   => A B C
+\pagenumbering{roman}
+
+Bacon ipsum dolor amet shankle pig turducken venison ground round meatloaf sausage t-bone pork frankfurter tri-tip shank. Rump jowl short loin, porchetta picanha strip steak sausage doner shank bresaola tenderloin pork loin. T-bone tongue meatball strip steak. Tongue pork loin sausage hamburger, tenderloin frankfurter t-bone leberkas ribeye kielbasa jowl brisket bresaola. Jerky corned beef chuck turducken turkey boudin cupim meatball short ribs bacon prosciutto frankfurter. Tenderloin pork chop corned beef beef, meatball porchetta ground round spare ribs cow frankfurter flank jerky. Pastrami tenderloin leberkas, ribeye shankle beef ribs pig chuck fatback pork chop tongue meatloaf kielbasa frankfurter t-bone.\newline
+
+Cupim jerky ball tip, ribeye corned beef t-bone beef pig andouille beef ribs brisket hamburger pork loin. Fatback prosciutto pastrami leberkas. Ribeye kevin prosciutto chuck beef, tongue pork belly. Short ribs jerky corned beef ribeye, shank chicken alcatra fatback ham pork chop t-bone shankle porchetta boudin.\newline
+
+Hamburger doner jerky flank chicken spare ribs. Picanha pork belly pig landjaeger ham tenderloin tri-tip. Pork chop flank tongue tenderloin frankfurter. Pig sausage salami strip steak.\newline
+
+% Crea una nueva página a partir del párrafo siguiente.
+\newpage
+
+% Vuelve a poner la numeración en normal.
+\pagenumbering{arabic}
+% Indica que la numeración comenzará en 2, los contadores que pueden 
+% cambiarse son: sec_name, chapter, page, secnumdepth, footnote, etc.
+\setcounter{page}{2}
+
+Tenderloin doner beef ribs, cow hamburger spare ribs biltong short ribs pancetta tongue andouille. Brisket chuck short ribs corned beef alcatra flank meatloaf sausage sirloin shank leberkas ground round biltong strip steak. Strip steak doner pork belly tongue, cow kevin bacon biltong swine picanha tail drumstick salami rump. Ham hock brisket bresaola picanha, beef shoulder pancetta leberkas filet mignon pork belly. Turducken drumstick pork belly ham.\newline
+
+Pork belly chicken rump, pancetta ball tip filet mignon pork loin meatball pork capicola sirloin spare ribs swine shank. Leberkas frankfurter tongue strip steak jerky chuck brisket fatback capicola bacon doner ham sirloin ribeye. Strip steak ribeye boudin pork drumstick, ham filet mignon pig capicola shankle tri-tip tail tongue. Bresaola hamburger cupim, corned beef short loin cow brisket pork loin shank.\newline
+
+Ball tip meatball kevin ribeye frankfurter pork loin drumstick. Shankle andouille ribeye jowl. Beef ribs filet mignon doner picanha meatloaf spare ribs boudin kevin. Pork turkey jerky picanha chicken fatback. Swine pastrami cupim tenderloin kevin. Rump frankfurter pork loin brisket prosciutto tenderloin. Hamburger porchetta turducken sirloin.\newline
+
+
+
+\end{document}

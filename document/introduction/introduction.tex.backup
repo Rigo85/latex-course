@@ -1,0 +1,46 @@
+\createHeader{Introducción}[]
+
+Tenderloin doner beef ribs, cow hamburger spare ribs biltong short ribs pancetta tongue andouille. Brisket chuck short ribs corned beef alcatra flank meatloaf sausage sirloin shank leberkas ground round biltong strip steak. Strip steak doner pork belly tongue, cow kevin bacon biltong swine picanha tail drumstick salami rump. Ham hock brisket bresaola picanha, beef shoulder pancetta leberkas filet mignon pork belly. Turducken drumstick pork belly ham.
+
+\paragraph{}
+We are working on
+\begin{tikzpicture}
+\draw (-1.5,0) -- (1.5,0);
+\draw (0,-1.5) -- (0,1.5);
+\end{tikzpicture}.
+
+\paragraph{}
+Ball tip meatball kevin ribeye frankfurter pork loin drumstick. Shankle andouille ribeye jowl. Beef ribs filet mignon doner picanha meatloaf spare ribs boudin kevin. Pork turkey jerky picanha chicken fatback. Swine pastrami cupim tenderloin kevin. Rump frankfurter pork loin brisket prosciutto tenderloin. Hamburger porchetta turducken sirloin.
+
+Turkey beef ribs beef, pork loin prosciutto shank chuck turducken bacon venison short ribs. Doner picanha shank swine chicken alcatra pig bacon brisket pork belly jerky boudin pancetta ribeye sausage. T-bone ham pig, kielbasa kevin brisket jerky doner turkey ground round pork belly chicken. Ham hock bacon filet mignon, jerky meatloaf pancetta ham.
+
+\paragraph{}
+Kevin t-bone cupim pork loin. Tenderloin brisket ground round, pork chop landjaeger prosciutto pig frankfurter biltong jowl picanha bacon ham hock turducken. Short ribs sirloin biltong, drumstick filet mignon venison tri-tip doner pastrami. Cow boudin beef chicken tenderloin doner chuck, shoulder ham hock shankle meatball corned beef frankfurter short ribs fatback. Bacon shankle kevin alcatra bresaola pancetta pork loin pastrami capicola turkey. Capicola boudin sirloin jerky leberkas spare ribs jowl alcatra corned beef prosciutto pork chop. Kielbasa frankfurter chicken, hamburger ribeye cupim rump doner fatback tail jerky kevin pork belly leberkas.
+
+\paragraph{}
+Short ribs shankle shoulder, hamburger doner bacon pork loin beef ribs filet mignon turducken tail swine tri-tip capicola. Pastrami frankfurter kielbasa, pig ball tip landjaeger sausage turducken drumstick picanha sirloin venison short ribs. Rump jowl frankfurter pork loin boudin. Bresaola fatback shank corned beef. Capicola kielbasa venison, sausage t-bone porchetta jowl. Fatback venison beef tenderloin, pig strip steak tongue pork pork belly kevin ham hock pork loin porchetta rump.
+
+\paragraph{}
+Kevin jowl boudin prosciutto. Strip steak bacon ham tri-tip chuck, beef meatball shoulder ball tip pork belly. Spare ribs pastrami jerky meatball pancetta short loin kielbasa swine beef ribs short ribs meatloaf tongue picanha tri-tip. Pork belly tenderloin prosciutto hamburger flank kielbasa venison sausage meatloaf brisket jerky short ribs kevin. Pancetta cupim shank tail chuck meatloaf, brisket andouille leberkas t-bone.
+
+\paragraph{}
+Jerky meatball pig, short loin cupim tenderloin ham landjaeger sirloin kevin bacon porchetta ground round. Venison flank landjaeger kevin jerky ground round porchetta ribeye fatback, cupim beef chuck swine ball tip. Tri-tip brisket fatback, tenderloin tail turducken andouille kevin hamburger capicola t-bone. Rump sirloin doner biltong meatloaf bresaola pastrami. Salami rump picanha andouille jerky kielbasa cow brisket alcatra.
+
+\paragraph{}
+Filet mignon tongue short ribs turkey, tri-tip beef ribs pork ground round porchetta pastrami hamburger jerky meatloaf turducken short loin. Tri-tip filet mignon spare ribs, meatloaf short loin boudin pig turducken. Hamburger ground round ribeye alcatra. Rump andouille cupim tail shank. Pork cow drumstick corned beef jowl tail meatloaf cupim swine. Pork landjaeger flank chuck.
+
+\paragraph{}
+Rump prosciutto beef biltong meatball, pork short ribs venison sausage. Porchetta tri-tip pancetta beef pig landjaeger short ribs. Sausage pancetta corned beef turducken pork chop, beef ground round short loin strip steak shoulder jerky tenderloin pastrami capicola prosciutto. Strip steak bresaola swine, capicola boudin short ribs rump tri-tip filet mignon turducken. Leberkas jowl swine frankfurter porchetta. Meatloaf filet mignon prosciutto jerky, meatball pork brisket ball tip doner shank t-bone cupim kielbasa swine. Capicola t-bone beef jerky, strip steak ham hock kielbasa.
+
+\paragraph{}
+El trabajo está dividido en tres capítulos:\\
+
+\paragraph{}
+El \textbf{Capítulo 1}: Revisión bibliográfica. Se realiza una revisión de los algoritmos genéticos, los algoritmos de distribución de la población, técnicas evolutivas para optimización multiobjetivo y los algoritmos evolutivos en entornos paralelos.
+
+\paragraph{}
+El \textbf{Capítulo 2}: Programas y metodologías. Se plantean los programas y las metodologías usadas en la elaboración de la tesis.
+
+\paragraph{}
+El \textbf{Capítulo 3}: Resultados y discusión. Se plantea como será implementada la librería de AE de forma secuencial y paralela, el tratamiento que se le dará a los problemas multiobjetivos, además se realizará un análisis de su complejidad. Se aborda la aplicación de la librería, tanto secuencia como paralela, en el Problema inverso aditivo de valores singulares y la Selección de la cartera o portafolio de proyecto.
+

@@ -1,0 +1,72 @@
+% Author Rigoberto Leander Salgado Reyes <rlsalgado2006@gmail.com>
+% 
+% Copyright 2016 by Rigoberto Leander Salgado Reyes.
+% 
+% This program is licensed to you under the terms of version 3 of the
+% GNU Affero General Public License. This program is distributed WITHOUT
+% ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING THOSE OF NON-INFRINGEMENT,
+% MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Please refer to the
+% AGPL (http:www.gnu.org/licenses/agpl-3.0.txt) for more details.
+
+
+% Ajustar los margenes de la hoja (el izquierdo es mayor que el derecho para el encuadernado).
+% tmargin => superior
+% rmargin => derecho
+% bmargin => inferior
+% lmargin => izquierdo.
+\usepackage[tmargin=3.81cm, rmargin=1.2cm, bmargin=3.31cm, lmargin=2cm]{geometry}
+
+% Utilizar la codificación UTF8 para el documento, de esta forma se puede utilizar las tildes
+% y la eñe de la forma: áéíóúñ y no \'a \'e \'i \'o \'u \~n. Se escribe mejor y ayuda en la 
+% corrección ortográfica.
+\usepackage[utf8x]{inputenc}
+\usepackage{ucs}
+
+% Utilizar el idioma español.
+\usepackage[spanish]{babel}
+
+% Se utiliza para crear comandos de una forma más amigable.
+\usepackage{xparse}
+
+% Se utiliza entre otras cosas para cargar imágenes.
+\usepackage{graphicx}
+
+% El paquete acronym brinda la posibilidad de utilizar los acronimos de forma sencilla.
+\usepackage{acronym}
+
+% Se utiliza para mostrar algoritmos.
+\usepackage{algorithm}
+
+% Se utiliza para crear gráficos.
+\usepackage{tikz}
+
+% Usar interlineado de 1.5
+% para que coincida con el interlineado 1.5 del ms-word el valor debe ser de 1.25.
+% existen varias formas de cambiar el interlineado.
+\linespread{1.5}
+
+% El paquete fancyhdr es usado para las cabeceras y pies de página.
+\usepackage{fancyhdr}
+
+\fancypagestyle{plain}{
+  \fancyhf{} % Restablece la configuración por defecto de las cabecera y pies de página.
+  \fancyhead{} % Restablece la configuración por defecto de las cabecera.
+  \fancyfoot{} % Restablece la configuración por defecto de los pies de página.
+  \fancyfoot[R]{\thepage}
+%   \fancyfoot[RO]{\thepage}
+%   \fancyfoot[LE]{\thepage}
+  % El estilo fancy agrega una línea que delimita el encabezado y pie de página.
+  % cambiando su grosor a 0 evitamos que aparezca.
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\pagestyle{fancy}
+
+% Fuente clon de Arial
+\renewcommand{\rmdefault}{phv}
+\renewcommand{\sfdefault}{phv}
+
+% Incluir el archivo con las configuriones.
+\input{configurations/configuration}
+
